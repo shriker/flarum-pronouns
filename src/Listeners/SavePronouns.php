@@ -11,9 +11,9 @@
 
 namespace Shriker\Pronouns\Listeners;
 
-use Shriker\Pronouns\PronounsValidator;
 use Flarum\User\Event\Saving;
 use Illuminate\Contracts\Events\Dispatcher;
+use Shriker\Pronouns\PronounsValidator;
 
 class SavePronouns
 {
@@ -32,7 +32,6 @@ class SavePronouns
         $attributes = array_get($event->data, 'attributes', []);
 
         if (array_key_exists('pronouns', $attributes)) {
-
             $this->validator->assertValid($attributes);
 
             $user = $event->user;

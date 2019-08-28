@@ -11,11 +11,11 @@
 
 namespace Shriker\Pronouns\Listeners;
 
-use Illuminate\Contracts\Events\Dispatcher;
 use Flarum\Api\Event\Serializing;
 use Flarum\Api\Serializer\ForumSerializer;
 use Flarum\Api\Serializer\UserSerializer;
 use Flarum\Settings\SettingsRepositoryInterface;
+use Illuminate\Contracts\Events\Dispatcher;
 
 class AddPronouns
 {
@@ -26,11 +26,13 @@ class AddPronouns
         $this->settings = $settings;
     }
 
-    public function subscribe(Dispatcher $events) {
+    public function subscribe(Dispatcher $events)
+    {
         $events->listen(Serializing::class, [$this, 'prepareApiAttributes']);
     }
 
-    public function prepareApiAttributes(Serializing $event) {
+    public function prepareApiAttributes(Serializing $event)
+    {
 
         // Make pronouns available via User
         if ($event->isSerializer(UserSerializer::class)) {
@@ -42,5 +44,4 @@ class AddPronouns
             $event->attributes['pronounsPrefix'] = $this->settings->get('shriker-pronouns.pronouns_prefix');
         }
     }
-
 }
