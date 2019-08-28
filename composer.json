@@ -1,0 +1,40 @@
+{
+  "name": "shriker/flarum-pronouns",
+  "description": "Add pronouns to user profiles and user cards.",
+  "keywords": [
+    "flarum",
+    "pronouns",
+    "inclusivity",
+    "users"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^0.1.0-beta.8"
+  },
+  "authors": [
+    {
+      "name": "Jodie Struthers",
+      "homepage": "https://shriker.ca",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Shriker\\Pronouns\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Personal Pronouns",
+      "icon": {
+        "name": "fas fa-chess-queen",
+        "backgroundColor": "#CBE86B",
+        "color": "#1C140D"
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
