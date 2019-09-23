@@ -28,6 +28,7 @@ composer update shriker/flarum-pronouns
 
 ### Links
 
+* [Flarum Discuss](https://discuss.flarum.org/d/21188-personal-pronouns)
 * [What are personal pronouns and why do they matter?](https://www.mypronouns.org/what-and-why)
 * [Pronoun Island](http://pronoun.is/)
 * [GitHub](https://github.com/shriker/flarum-pronouns)
