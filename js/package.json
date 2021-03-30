@@ -1,6 +1,6 @@
 {
   "name": "@shriker/flarum-pronouns",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "dependencies": {
     "flarum-webpack-config": "^0.1.0-beta.10",
@@ -10,5 +10,8 @@
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "flarum": "0.1.0-beta.16"
   }
 }

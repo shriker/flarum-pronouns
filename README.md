@@ -1,6 +1,6 @@
 # Flarum Personal Pronouns
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/shriker/flarum-pronouns.svg)](https://packagist.org/packages/shriker/flarum-pronouns) [![Flarum](https://img.shields.io/badge/flarum-0.1.0--beta.8-%23E7672E)](https://flarum.org/)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/shriker/flarum-pronouns.svg)](https://packagist.org/packages/shriker/flarum-pronouns) [![Flarum](https://img.shields.io/badge/flarum-0.1.0--beta.16-%23E7672E)](https://flarum.org/)
 
 A [Flarum](http://flarum.org) extension. This adds pronouns to user profiles and user cards for quick reference.
 
